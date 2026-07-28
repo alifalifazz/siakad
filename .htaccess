@@ -1,0 +1,7 @@
+# Mencegah listing direktori
+Options -Indexes
+
+# Larang akses langsung ke folder config & includes
+<FilesMatch "\.(sql|md)$">
+    Require all denied
+</FilesMatch>
